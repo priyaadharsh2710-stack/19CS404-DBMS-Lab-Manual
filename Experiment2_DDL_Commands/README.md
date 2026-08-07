@@ -105,27 +105,75 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+```
+Insert all students from Archived_students table into the Student_details table.
 
-```sql
--- Paste your SQL code below for Question 1
+cid         name        type        notnull     dflt_value  pk
+----------  ----------  ----------  ----------  ----------  ----------
+0           RollNo      INT           0                       1
+1           Name        VARCHAR(100)  0                       0
+2           Gender      VARCHAR(10)   0                       0
+3           Subject     VARCHAR(50)   0                       0
+4           MARKS       INT           0                       0
+For example:
+
+Test	Result
+select * from student_details;
+RollNo      Name           Gender      Subject     MARKS
+----------  -------------  ----------  ----------  ----------
+1           Alice Johnson  Female      Math        85
+2           Bob Smith      Male        Science     90
+3           Charlie Brown  Male        English     78
+
+```
+sql
+```
+INSERT INTO Student_details
+SELECT * FROM Archived_students;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1061" height="333" alt="image" src="https://github.com/user-attachments/assets/cab24095-eaa0-4601-827b-c8795eb16eb7" />
+
 
 **Question 2**
 ---
 -- Paste Question 2 here
+```
+Write a SQL query to Rename the "city" column to "location" in the "customer" table.
 
-```sql
+Sample table: customer
+
+ customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
+ 
+
+For example:
+
+Test	Result
+pragma table_info('customer');
+cid         name         type                               notnull     dflt_value  pk
+----------  -----------  ---------------------------------  ----------  ----------  ----------
+0           customer_id  integer primarykey auto increment  0                       0
+1           cust_name    varchar2(30)                       0                       0
+2           location     varchar(30)                        0                       0
+3           grade        number                             0                       0
+4           salesman_id  number                             0                       0
+```
+sql
 -- Paste your SQL code below for Question 2
+```
+ALTER TABLE customer
+RENAME COLUMN city TO location;
 ```
 
 **Output:**
+<img width="1065" height="367" alt="image" src="https://github.com/user-attachments/assets/59259832-bed1-4c43-9bf1-6847e8d7debe" />
 
-![Output2](output.png)
 
 **Question 3**
 ---
