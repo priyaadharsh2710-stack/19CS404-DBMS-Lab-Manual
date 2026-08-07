@@ -178,14 +178,38 @@ RENAME COLUMN city TO location;
 **Question 3**
 ---
 -- Paste Question 3 here
+```
+Create a table named Bonuses with the following constraints:
+BonusID as INTEGER should be the primary key.
+EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
+BonusAmount as REAL should be greater than 0.
+BonusDate as DATE.
+Reason as TEXT should not be NULL.
+For example:
 
-```sql
+Test	Result
+INSERT INTO Bonuses (BonusID, EmployeeID, BonusAmount, BonusDate, Reason) VALUES (1, 6, 1000.0, '2024-08-01', 'Outstanding performance');
+SELECT * FROM Bonuses;
+BonusID     EmployeeID  BonusAmount  BonusDate   Reason
+----------  ----------  -----------  ----------  -----------------------
+1           6           1000.0       2024-08-01  Outstanding performance
+```
+sql
 -- Paste your SQL code below for Question 3
 ```
-
+CREATE TABLE Bonuses (
+    BonusID INTEGER PRIMARY KEY,
+    EmployeeID INTEGER,
+    BonusAmount REAL CHECK (BonusAmount > 0),
+    BonusDate DATE,
+    Reason TEXT NOT NULL,
+    FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
+);
+```
 **Output:**
 
-![Output3](output.png)
+<img width="1068" height="332" alt="image" src="https://github.com/user-attachments/assets/ef9d58ed-5486-4c67-9a5f-b26625c837fb" />
+
 
 **Question 4**
 ---
