@@ -33,6 +33,9 @@ END;
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 
+## OUTPUT
+<img width="595" height="197" alt="image" src="https://github.com/user-attachments/assets/32753b83-c66f-4d33-acf0-940fb3462fd1" />
+
 ---
 
 ## 2. Write a trigger to prevent deletion of records from a sensitive table.
@@ -43,6 +46,9 @@ END;
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
 
+## OUTPUT
+<img width="597" height="185" alt="image" src="https://github.com/user-attachments/assets/33f6b033-0876-4d86-8e53-8b67b2e2ad66" />
+
 ---
 
 ## 3. Write a trigger to automatically update a `last_modified` timestamp.
@@ -52,6 +58,8 @@ END;
 
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
+## OUTPUT
+<img width="600" height="222" alt="image" src="https://github.com/user-attachments/assets/7f091b9a-c89d-45d0-8f36-71693f24e860" />
 
 ---
 
@@ -63,6 +71,9 @@ END;
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 
+## OUTPUT
+<img width="597" height="123" alt="image" src="https://github.com/user-attachments/assets/e1baa092-4049-4d16-9eeb-d76ac7897517" />
+
 ---
 
 ## 5. Write a trigger that checks a condition before allowing insertion into a table.
@@ -72,6 +83,9 @@ END;
 
 **Expected Output:**
 - If the inserted salary in the `employees` table is below the condition (e.g., salary < 3000), the insert operation is blocked, and an error message is raised, such as: `ERROR: Salary below minimum threshold.`
+
+## OUTPUT
+<img width="591" height="155" alt="image" src="https://github.com/user-attachments/assets/92e4f1f6-b685-4aee-835d-499ac62eebea" />
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
