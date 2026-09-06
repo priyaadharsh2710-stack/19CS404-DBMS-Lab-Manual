@@ -62,6 +62,8 @@ Key Differences:
 
 **Expected Output:**  
 Square of 6 is 36
+## OUTPUT 
+<img width="476" height="122" alt="image" src="https://github.com/user-attachments/assets/152c56ae-262d-4b01-9ea6-888e11f3bd96" />
 
 ---
 
@@ -76,6 +78,8 @@ Square of 6 is 36
 
 **Expected Output:**  
 Factorial of 5 is 120
+## OUTPUT 
+<img width="422" height="118" alt="image" src="https://github.com/user-attachments/assets/91bf8bd7-1177-4c9d-8466-fd976a50bd69" />
 
 ---
 
@@ -90,6 +94,9 @@ Factorial of 5 is 120
 **Expected Output:**  
 12 is Even
 
+## OUTPUT 
+<img width="377" height="122" alt="image" src="https://github.com/user-attachments/assets/2834daab-8826-4dfd-a624-75e37fa2a9bf" />
+
 ---
 
 ## 4. Write a PL/SQL Function to Return the Reverse of a Number
@@ -103,6 +110,9 @@ Factorial of 5 is 120
 
 **Expected Output:**  
 Reversed number of 1234 is 4321
+
+## OUTPUT 
+<img width="447" height="112" alt="image" src="https://github.com/user-attachments/assets/d1791cf9-8c4c-4792-880e-5ee5cda6bcf0" />
 
 ---
 
@@ -121,6 +131,9 @@ Multiplication table of 5:
 5 x 3 = 15  
 ...  
 5 x 10 = 50
+
+## OUTPUT 
+<img width="593" height="253" alt="image" src="https://github.com/user-attachments/assets/e532b8e7-b95c-42b9-b92b-e67bd4b5bb96" />
 
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
